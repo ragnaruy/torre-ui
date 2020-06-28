@@ -60,7 +60,9 @@
       <!-- Symbol Column -->
       <ng-container matColumnDef="pictureUrl">
         <mat-header-cell *matHeaderCellDef> Picture </mat-header-cell>
-        <mat-cell *matCellDef="let element"> {{element.pictureUrl}} </mat-cell>
+        <mat-cell *matCellDef="let element">
+          <img height="40" width="40" src="{{element.pictureUrl}}"/>
+        </mat-cell>
       </ng-container>
       <!-- Symbol Column -->
       <ng-container matColumnDef="location">
